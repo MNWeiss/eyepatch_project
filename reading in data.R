@@ -31,7 +31,7 @@ left_narrowness <- unlist(lapply(left_outlines, FUN = get_narrowness))
 right_narrowness <- unlist(lapply(right_outlines, FUN = get_narrowness))
 
 # Use some string manipulation to get the whales' IDs from the file names
-left_IDs <- substr(names(left_outlines),1, regexpr("_", names(right_outlines)) - 1)
+left_IDs <- substr(names(left_outlines),1, regexpr("_", names(left_outlines)) - 1)
 right_IDs <- substr(names(right_outlines),1, regexpr("_", names(right_outlines)) - 1)
 
 # Same kind of manipulation to get the year each photo was taken
