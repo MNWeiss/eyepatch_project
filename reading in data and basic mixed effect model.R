@@ -80,3 +80,10 @@ right_repeatability
 
 # These repeatabilities are quite good!
 # Most of the variation in shape is between individuals, rather than within, so we're getting some good individual level information here!
+
+# We can also export our datasets to .csv files so we can use them in other analysis
+
+write.csv(left_data, file = "left_data.csv")
+write.csv(right_data, file = "right_data.csv")
+
+# N.B. the "file" argument can be changed to save these datasets where ever you want on your machine, and you can name them whatever you want as well.
